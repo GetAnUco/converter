@@ -1,0 +1,39 @@
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="converter">
+		<p class="header">У меня есть: </p>
+		<input type="text" class="currencyInput" value="3.5">
+		<select class="currencySelector" id="selector1">
+			<option>USD (доллар США)</option>
+			<option>RUB (российский рубль)</option>
+			<option>EUR (евро)</option>
+		</select>
+		<button class="swapButton" onclick="swapAction()"><img src="img/swap.png"></button>
+		<p class="header">Я получу: </p>
+		<input type="text" class="currencyInput" value="198.525241" readonly="true">
+		<select class="currencySelector" id="selector2">
+			<option>RUB (российский рубль)</option>
+			<option>USD (доллар США)</option>
+			<option>EUR (евро)</option>
+		</select>
+		<div class="options">
+			<span>Комиссия: <input type="text" class="fee" id="fee" value="0.00" size="5">
+				<div class="fee-buffer" id="fee-buffer"></div>
+				<span style="color: #568af2">%</span>
+			</span>
+			<p>По данным: 
+				<select class="source">
+					<option>ЦБ РФ</option>
+					<option>Forex</option>
+				</select>
+			</p>
+		</div>
+	</div>
+	<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+	<script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+* {
+	font-family: 'Ubuntu', sans-serif;
+	overflow-x:hidden
+}
+
+input {
+	outline: none;
+	border: none;
+}
+
+select {
+	-webkit-appearance: none;
+  	-moz-appearance: none;
+  	appearance: none;
+}
+
+.converter {
+	margin: 0 auto;
+	height: 100%;
+	//background: grey;
+	width: 80%;
+	padding-top: 10px;
+}
+
+.header {
+	margin-top: 0;
+	font-size: 4vmax;
+}
+
+.currencyInput {
+	margin-bottom: 20px;
+	height: 6vmax;
+	width: 100%;
+	display: block;
+	font-size: 5vmax;
+	text-align: center;
+	border-bottom: solid 0.25vmax;
+	border-color: #cccccc;
+}
+
+.currencyInput:focus {
+	border-bottom: solid 0.25vmax;
+	border-color: #888888;
+}
+
+.currencySelector {
+	color: grey;
+	height: 6vmax;
+	width: 100%;
+	display: block;
+	font-size: 3vmax;
+	text-align: center;
+	text-align-last: center;
+	border: none;
+}
+
+.currencySelector:focus {
+	outline: none;
+}
+
+.swapButton {
+	background: white;
+	display: block;
+	margin: auto;
+	margin-top: 20px;
+	font-size: 5vh;
+	outline: none;
+	border: none;
+}
+
+.options {
+	display: inline-block;
+	font-size: 3vmax;
+}
+
+.fee {
+	font-size: 3vmax;
+	color: #568af2;
+	border-bottom: dotted 5px;
+	width: 5.8vmax;
+}
+
+.fee-buffer {
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    visibility: hidden;
+    white-space: nowrap;
+}
+
+.source {
+	font-size: 3vmax;
+	color: #568af2;
+	outline: none;
+	border: none;
+	border-bottom: dotted 5px;
+}
